@@ -16,6 +16,7 @@ LinkList* LinkList_Create(){
     memset(ret,0, sizeof(TLinkList));
     ret->length = 0;
     ret->header.next = NULL;
+    return ret;
 
 }
 void LinkList_Destory(LinkList* list){
