@@ -25,8 +25,10 @@ void main(){
 
     printf("len:%d\n",LinkStack_Size(stack));
     printf("top:%d\n",*((int *)LinkStack_Top(stack)));
-
-    while(LinkStack_Size(stack)>0){
-        int tmp = *((int *)LinkStack_Pop(stack));
-    }
+    printf("top:%d\n",*((int *)LinkStack_Pop(stack)));
+    printf("top:%d\n",*((int *)LinkStack_Pop(stack)));
+    int tmp = *((int *)LinkStack_Pop(stack));
+//    while(LinkStack_Size(stack)>0){
+//        int tmp = *((int *)LinkStack_Pop(stack));
+//    }
 }

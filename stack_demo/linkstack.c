@@ -58,9 +58,8 @@ void* LinkStack_Pop(LinkStack* stack){
 
     }
     item = tmp->item;
-
+    char a = *(char *)tmp;
     free(tmp);//包装节点入栈的时候分配了内存，现在释放
-
     return item;
 }
 void* LinkStack_Top(LinkStack* stack){

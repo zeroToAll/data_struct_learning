@@ -102,6 +102,7 @@ LinkListNode* LinkList_Delete(LinkList* list,int pos){
     for(i=0;i<pos&&current->next!=NULL;i++){
         current = current->next;
     }
+
     LinkListNode *tmp = current->next;
     current->next = tmp->next;
     return tmp;
